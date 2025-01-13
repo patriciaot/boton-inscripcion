@@ -276,6 +276,15 @@ body{
 }
 
 
+.ui-checkbox + label {
+    color: #616161;
+    cursor: pointer;
+}
+
+.ui-checkbox:checked + label {
+    color: black;
+}
+
 
 
 .inscription-final {
