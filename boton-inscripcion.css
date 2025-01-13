@@ -1,0 +1,423 @@
+body{
+    font-family: poppins, serif;
+}
+
+
+.cards{
+    border-bottom: 1px solid #CBCDDA;
+    margin:20px 10px;
+}
+
+
+/* INSCRIPCIÓN */
+
+.inscription-title{
+    display: flex;
+    align-items: center;
+    padding-bottom: 18px;
+}
+
+.inscription-title svg{
+    width: 70px;
+    height: 70px;
+    fill: black;
+    padding-left: 20px;
+}
+
+
+.inscription-title h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+}
+
+/* FECHA DE INSCRIPCIÓN */
+
+.inscription-date--card{
+    display: flex;
+    justify-content: center;
+}
+
+.inscription-date--cardContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 20px;
+    margin-bottom: 30px;
+}
+
+.inscription-date--time__auction{
+    display: flex;
+    justify-content: space-between;
+}
+
+.inscription-date--container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.inscription-date--image__auction{
+    display: inline-block;
+    border-radius: 5px;
+    margin: 10px 10px 10px 0;
+}
+
+.inscription-date--image__auction svg{
+    width: 60px;
+    height: 60px;
+    background: white;
+    fill: #094E91;
+    border-radius: 5px;
+    box-shadow: 0 1px 13px rgba(0,0,0,0.1);
+}
+
+.inscription-date-time__date{
+    margin-top: 10px;
+}
+
+.inscription-date-time__date hgroup{
+    color: #ABACAE;
+}
+
+.inscription-date--time__price data{
+    color: #4B4B4B;
+}
+
+
+.inscription-date--time__auctionClosed{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-end;
+    margin-top: 10px;
+    margin-left: 100px;
+}
+
+.inscription-date--image__closed svg{
+    width: 24px;
+    height: 24px;
+}
+
+.insciption-date-time__announcement{
+    display: block;
+    width: 90%;
+}
+
+.inscription-date--time__totalPrice{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.inscription-date--time__totalPrice hgroup{
+    margin-right: 15px;
+}
+
+.inscription-date--time__totalPrice data{
+    color: #01A0DD;
+}
+
+/* TÉRMINOS Y CONDICIONES   */
+
+
+.inscription-conditions--card{
+    margin-bottom: 30px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.inscription-conditions--card hgroup{
+    margin-bottom: 14px;
+}
+
+.inscription-conditions-form{
+    color: #616161;
+    display: flex;
+    flex-direction: column;
+}
+.inscription-conditions--formContent label{
+    margin-left: 10px;
+}
+
+.inscription-conditions--formContent__terms{
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.inscription-conditions--formContent__privacy{
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+.inscription-conditions--formContent__notifications{
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+/* FINALIZACIÓN   */
+
+/* From Uiverse.io by Galahhad */
+/* checkbox settings 👇 */
+
+.ui-checkbox {
+    --primary-color:#029EDC;
+    --secondary-color: #fff;
+    --primary-hover-color: #029EDC;
+    /* checkbox */
+    --checkbox-diameter: 20px;
+    --checkbox-border-radius: 5px;
+    --checkbox-border-color: #d9d9d9;
+    --checkbox-border-width: 1px;
+    --checkbox-border-style: solid;
+    /* checkmark */
+    --checkmark-size: 1.2;
+}
+
+.ui-checkbox,
+.ui-checkbox *,
+.ui-checkbox *::before,
+.ui-checkbox *::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.ui-checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: var(--checkbox-diameter);
+    height: var(--checkbox-diameter);
+    border-radius: var(--checkbox-border-radius);
+    background: var(--secondary-color);
+    border: var(--checkbox-border-width) var(--checkbox-border-style) var(--checkbox-border-color);
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    cursor: pointer;
+    position: relative;
+}
+
+.ui-checkbox::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    -webkit-box-shadow: 0 0 0 calc(var(--checkbox-diameter) / 2.5) var(--primary-color);
+    box-shadow: 0 0 0 calc(var(--checkbox-diameter) / 2.5) var(--primary-color);
+    border-radius: inherit;
+    opacity: 0;
+    -webkit-transition: all 0.5s cubic-bezier(0.12, 0.4, 0.29, 1.46);
+    -o-transition: all 0.5s cubic-bezier(0.12, 0.4, 0.29, 1.46);
+    transition: all 0.5s cubic-bezier(0.12, 0.4, 0.29, 1.46);
+}
+
+.ui-checkbox::before {
+    top: 40%;
+    left: 50%;
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 7px;
+    border-right: 2px solid var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
+    -webkit-transform: translate(-50%, -50%) rotate(45deg) scale(0);
+    -ms-transform: translate(-50%, -50%) rotate(45deg) scale(0);
+    transform: translate(-50%, -50%) rotate(45deg) scale(0);
+    opacity: 0;
+    -webkit-transition: all 0.1s cubic-bezier(0.71, -0.46, 0.88, 0.6),opacity 0.1s;
+    -o-transition: all 0.1s cubic-bezier(0.71, -0.46, 0.88, 0.6),opacity 0.1s;
+    transition: all 0.1s cubic-bezier(0.71, -0.46, 0.88, 0.6),opacity 0.1s;
+}
+
+/* actions */
+
+.ui-checkbox:hover {
+    border-color: var(--primary-color);
+}
+
+.ui-checkbox:checked {
+    background: var(--primary-color);
+    border-color: transparent;
+}
+
+.ui-checkbox:checked::before {
+    opacity: 1;
+    -webkit-transform: translate(-50%, -50%) rotate(45deg) scale(var(--checkmark-size));
+    -ms-transform: translate(-50%, -50%) rotate(45deg) scale(var(--checkmark-size));
+    transform: translate(-50%, -50%) rotate(45deg) scale(var(--checkmark-size));
+    -webkit-transition: all 0.2s cubic-bezier(0.12, 0.4, 0.29, 1.46) 0.1s;
+    -o-transition: all 0.2s cubic-bezier(0.12, 0.4, 0.29, 1.46) 0.1s;
+    transition: all 0.2s cubic-bezier(0.12, 0.4, 0.29, 1.46) 0.1s;
+}
+
+.ui-checkbox:active:not(:checked)::after {
+    -webkit-transition: none;
+    -o-transition: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    transition: none;
+    opacity: 1;
+}
+
+
+
+
+.inscription-final {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* From Uiverse.io by vinodjangid07 */
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    width: 21%;
+    height: 45px;
+    border-radius: 10px;
+    border: 1px solid #CBCDDA;
+    padding: 7px 10px 7px 5px;
+    box-sizing: content-box;
+    background-color: white;
+}
+
+.icon {
+    width: 30px;
+    fill: rgb(255, 255, 255);
+    margin-left: 8px;
+    transition: all 0.3s;
+}
+.input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    padding: 0 14px 0 9px;
+    background-color: white;
+    color: black;
+}
+.input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #292524 inset;
+    -webkit-text-fill-color: #ffffff;
+}
+
+
+.Subscribe-btn {
+    height: 108%;
+    width: 145px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 8px;
+    color: rgb(0, 0, 0);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    background-color: #ffffff;
+    box-shadow: 0 1px 13px rgba(0,0,0,0.1);
+    font-weight: 500;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s;
+}
+
+.input-wrapper:active .icon {
+    transform: scale(1.3);
+}
+.Subscribe-btn:hover {
+    color: white;
+    background: #029EDC;
+}
+.Subscribe-btn:hover .arrow {
+    margin-right: 0;
+    animation: jello-vertical 0.9s both;
+    transform-origin: right;
+}
+
+@keyframes jello-vertical {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+    30% {
+        transform: scale3d(0.75, 1.25, 1);
+    }
+    40% {
+        transform: scale3d(1.25, 0.75, 1);
+    }
+    50% {
+        transform: scale3d(0.85, 1.15, 1);
+    }
+    65% {
+        transform: scale3d(1.05, 0.95, 1);
+    }
+    75% {
+        transform: scale3d(0.95, 1.05, 1);
+    }
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}
+.Subscribe-btn:active {
+    transform: scale(0.9);
+}
+
+.final-inscription--btn{
+    margin-top: 25px;
+}
+
+.final-inscription--btn button{
+    width: 310px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+    padding: 15px;
+    background-color: #029EDC;
+    background-image: linear-gradient(to top right, #039be5, #29b6f6);
+    color: #ffffff;
+    font-size: 15px;
+    white-space: nowrap;
+    line-height: 1.25rem;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    vertical-align: middle;
+    border-radius: 0.5rem;
+    gap: 0.75rem;
+    box-shadow:
+            0 4px 6px -1px rgba(0, 0, 0, 0.1),
+            0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    border: none;
+    transition: all 0.6s ease;
+}
+
+.final-inscription--btn button:hover{
+    box-shadow:
+            0 4px 30px rgba(4, 175, 255, 0.1),
+            0 2px 30px rgba(11, 158, 255, 0.06);
+}
+
+
